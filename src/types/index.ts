@@ -6,6 +6,7 @@ export * from './dataExporters';
 export * from './discounts';
 export * from './events';
 export * from './items';
+export * from './itemVariations';
 export * from './media';
 export * from './memberships';
 export * from './membershipTypes';

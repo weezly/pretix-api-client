@@ -1,27 +1,53 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
-import { Event, EventDetails } from './types/events';
-import { Item, ItemDetails } from './types/items';
-import { Order, OrderPosition } from './types/orders';
-import { Question, QuestionDetails } from './types/questions';
-import { Voucher, VoucherDetails } from './types/vouchers';
-import { Quota, QuotaDetails } from './types/quotas';
-import { SeatingPlan, SeatingPlanDetails } from './types/seatingPlans';
-import { ItemVariation, ItemVariationDetails } from './types/itemVariations';
-import { Discount, DiscountDetails } from './types/discounts';
-import { SalesChannel, SalesChannelDetails } from './types/salesChannels';
-import { WaitingListEntry, WaitingListEntryDetails } from './types/waitingList';
-import { CheckInList, CheckInListDetails } from './types/checkinLists';
-import { MembershipType, MembershipTypeDetails } from './types/membershipTypes';
-import { Membership, MembershipDetails } from './types/memberships';
-import { Media, MediaDetails } from './types/media';
-import { Cart, CartDetails } from './types/carts';
-import { Team, TeamDetails } from './types/teams';
-import { DataExporter, DataExport, DataExportDetails } from './types/dataExporters';
-import { ScheduledExport, ScheduledExportDetails } from './types/scheduledExports';
-import { Shredder, ShredderDetails } from './types/shredders';
-import { BankTransfer, BankTransferDetails } from './types/bankTransfer';
-import { PDFExport, PDFExportDetails } from './types/pdfExport';
-import { Badge, BadgeDetails } from './types/badges';
+import {
+  Event,
+  EventDetails,
+  Item,
+  ItemDetails,
+  ItemVariation,
+  ItemVariationDetails,
+  Order,
+  Question,
+  QuestionDetails,
+  Voucher,
+  VoucherDetails,
+  Quota,
+  QuotaDetails,
+  SeatingPlan,
+  SeatingPlanDetails,
+  Discount,
+  DiscountDetails,
+  SalesChannel,
+  SalesChannelDetails,
+  WaitingListEntry,
+  WaitingListEntryDetails,
+  CheckInList,
+  CheckInListDetails,
+  MembershipType,
+  MembershipTypeDetails,
+  Membership,
+  MembershipDetails,
+  Media,
+  MediaDetails,
+  Cart,
+  CartDetails,
+  Team,
+  Badge,
+  BadgeDetails,
+  BankTransfer,
+  BankTransferDetails,
+  DataExport,
+  DataExportDetails,
+  DataExporter,
+  PDFExport,
+  PDFExportDetails,
+  ScheduledExport,
+  ScheduledExportDetails,
+  Shredder,
+  ShredderDetails,
+  TeamDetails,
+  
+} from './types';
 
 export class PretixApiClient {
   private axiosInstance: AxiosInstance;

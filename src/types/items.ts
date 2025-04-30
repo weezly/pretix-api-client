@@ -1,3 +1,4 @@
+import { ItemVariation } from './itemVariations';
 export interface Item {
     id: number;
     event: string;
@@ -27,14 +28,4 @@ export interface Item {
 
 export interface ItemDetails extends Item {
     variations: ItemVariation[];
-}
-
-export interface ItemVariation {
-    id: number;
-    item: number;
-    name: Record<string, string>;
-    price?: number;
-    active: boolean;
-    position: number;
-    values: number[];
 }
